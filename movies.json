@@ -1,0 +1,28 @@
+{
+  "movies": [
+    {
+      "id": "73f6",
+      "title": "Guardians of the Galaxy",
+      "genre": "Fiction",
+      "year": 2013
+    },
+    {
+      "id": "0193",
+      "title": "Shindler's List",
+      "genre": "Fiction",
+      "year": 2001
+    },
+    {
+      "id": "867d",
+      "title": "Avengers : Infinity War",
+      "genre": "Fiction",
+      "year": 2018
+    },
+    {
+      "id": "14cc",
+      "title": "Avengers : Endgame",
+      "year": 2019,
+      "genre": "Fiction"
+    }
+  ]
+}

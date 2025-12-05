@@ -1,0 +1,160 @@
+/* Global Page Styling */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f6f7fb;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+h2,
+h3 {
+  justify-self: center;
+  color: #2c3e50;
+}
+
+/* Form Container */
+form#add-movie-form {
+  background: #ffffff;
+  padding: 20px;
+  max-width: 450px;
+  margin: 0 auto 30px auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+form#add-movie-form input {
+  width: 95%;
+  padding: 10px;
+  margin: 8px 0 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+form#add-movie-form button {
+  width: 100%;
+  padding: 12px;
+  background: #3498db;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+form#add-movie-form button:hover {
+  background: #2980b9;
+}
+
+/* Search Bar */
+#search-input {
+  width: 100%;
+  max-width: 450px;
+  display: block;
+  margin: 10px auto 25px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+#search-input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* --- MOVIE LIST GRID LAYOUT --- */
+
+#movie-list {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding-bottom: 40px;
+}
+
+/* Movie Card Box */
+.movie-item {
+  background: #ffffff;
+  padding: 20px;
+  min-height: 200px; /* makes it box-like */
+  border-radius: 12px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.06);
+  border: 2px solid #3498db33;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Hover effect for nicer UI */
+.movie-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+.movie-item p {
+  margin: 0 0 10px 0;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+/* Button Container for grid cards */
+.movie-item .btn-row {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+/* Buttons inside each movie card */
+.movie-item button {
+  flex: 1;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: background 0.25s ease, transform 0.1s ease;
+}
+
+.movie-item button:hover {
+  transform: scale(1.05);
+}
+
+/* Edit button */
+.movie-item .edit-btn {
+  background: #f1c40f;
+  color: white;
+}
+
+.movie-item .edit-btn:hover {
+  background: #d4ac0d;
+}
+
+/* Delete button */
+.movie-item .delete-btn {
+  background: #e74c3c;
+  color: white;
+}
+
+.movie-item .delete-btn:hover {
+  background: #c0392b;
+}
+
+/* Horizontal Line */
+hr {
+  margin: 40px 0;
+  border: none;
+  height: 1px;
+  background: #ddd;
+}
