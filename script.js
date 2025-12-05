@@ -1,4 +1,4 @@
-const API_URL = "http://https://prayushmulmi.github.io/FSD-Week3/movies";
+const API_URL = "movies.json";
 
 const movieListDiv = document.getElementById("movie-list");
 const searchInput = document.getElementById("search-input");
